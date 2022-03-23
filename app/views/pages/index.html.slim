@@ -4,10 +4,14 @@
 br
 br
 
-- @users.each do |user|
-  = link_to user.user_name, user_posts_path(user.id)
+- @posts.each do |post|
+  = link_to post.user.user_name, user_posts_path(post.user.id), class: 'font-bold'
   br
-  = image_tag user.posts[-1].image if user.posts[-1].image.attached?
-  = user.posts[-1].description
+  = image_tag post.image if post.image.attached?
+  p
+    strong class="mr-2" #{post.user.user_name}
+    span #{post.description}
+  span #{post.created_at}
   br
+  hr
   br
