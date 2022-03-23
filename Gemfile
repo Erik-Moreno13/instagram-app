@@ -82,3 +82,4 @@ gem 'devise', '~> 4.8', '>= 4.8.1'
 gem 'slim', '~> 4.1'
 
 gem "stimulus_reflex", "= 3.5.0.pre8"
+
