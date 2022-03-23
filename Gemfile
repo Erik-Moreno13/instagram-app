@@ -83,3 +83,5 @@ gem 'slim', '~> 4.1'
 
 gem "stimulus_reflex", "= 3.5.0.pre8"
 
+gem 'nested_scaffold', '~> 1.1'
+
