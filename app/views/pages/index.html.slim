@@ -1,4 +1,13 @@
-h1 Pages#index
-p Find me in app/views/pages/index.html.slim
-
 = link_to 'logout', destroy_user_session_path, data: {turbo_method: :delete}
+
+= link_to ' Profile', user_posts_path(current_user.id)
+br
+br
+
+- @users.each do |user|
+  = link_to user.user_name, user_posts_path(user.id)
+  br
+  = image_tag user.posts[-1].image if user.posts[-1].image.attached?
+  = user.posts[-1].description
+  br
+  br

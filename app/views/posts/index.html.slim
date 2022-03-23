@@ -1,4 +1,16 @@
+= link_to 'Home', root_path
+br
+br
+- if @user == current_user
+  = link_to 'edit profile', edit_user_registration_path
+br
+br
+= @user.user_name
+br
+br
 - @posts.each do |post|
+  = image_tag post.image if post.image.attached?
   = post.description
-  = post.user_id
   br
+
+= link_to 'new Post', new_user_post_path

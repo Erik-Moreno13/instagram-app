@@ -85,3 +85,5 @@ gem "stimulus_reflex", "= 3.5.0.pre8"
 
 gem 'nested_scaffold', '~> 1.1'
 
+gem 'image_processing', '~> 1.12', '>= 1.12.2'
+
