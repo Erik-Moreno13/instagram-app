@@ -60,6 +60,9 @@ group :development do
   # Use console on exceptions pages [https://github.com/rails/web-console]
   gem "web-console"
 
+  gem 'slim-rails', '~> 3.4'
+
+
   # Add speed badges [https://github.com/MiniProfiler/rack-mini-profiler]
   # gem "rack-mini-profiler"
 
@@ -77,7 +80,5 @@ end
 gem 'devise', '~> 4.8', '>= 4.8.1'
 
 gem 'slim', '~> 4.1'
-
-gem 'slim-rails', '~> 3.4'
 
 gem "stimulus_reflex", "= 3.5.0.pre8"
