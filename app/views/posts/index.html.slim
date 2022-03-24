@@ -4,6 +4,10 @@
   = link_to 'edit profile', edit_user_registration_path
 '|
 = @user.user_name
+'|
+a [href="#"
+  data-reflex="click->Post#follow"
+  data-user_id="#{current_user.id}"] Follow
 br
 br
 - @posts.each do |post|

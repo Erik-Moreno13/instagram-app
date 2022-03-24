@@ -87,3 +87,4 @@ gem 'nested_scaffold', '~> 1.1'
 
 gem 'image_processing', '~> 1.12', '>= 1.12.2'
 
+gem 'byebug', '~> 11.1', '>= 11.1.3'

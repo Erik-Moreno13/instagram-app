@@ -4,14 +4,4 @@
 br
 br
 
-- @posts.each do |post|
-  = link_to post.user.user_name, user_posts_path(post.user.id), class: 'font-bold'
-  br
-  = image_tag post.image if post.image.attached?
-  p
-    strong class="mr-2" #{post.user.user_name}
-    span #{post.description}
-  span #{post.created_at}
-  br
-  hr
-  br
+== render partial: 'post', collection: @posts

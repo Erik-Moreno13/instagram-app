@@ -45,6 +45,7 @@
     <orderEntry type="library" scope="PROVIDED" name="bootsnap (v1.11.1, rbenv: 3.1.1) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="builder (v3.2.4, rbenv: 3.1.1) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="bundler (v2.3.7, rbenv: 3.1.1) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="byebug (v11.1.3, rbenv: 3.1.1) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="cable_ready (v5.0.0.pre8, rbenv: 3.1.1) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="capybara (v3.36.0, rbenv: 3.1.1) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="childprocess (v4.1.0, rbenv: 3.1.1) [gem]" level="application" />
