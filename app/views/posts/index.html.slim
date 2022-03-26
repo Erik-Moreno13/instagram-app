@@ -5,9 +5,14 @@
 '|
 = @user.user_name
 '|
-a [href="#"
-  data-reflex="click->Post#follow"
-  data-user_id="#{current_user.id}"] Follow
+span Followers(#{@user.followers.count})
+'|
+span Followed(#{@user.following.count})
+br
+br
+- if @user != current_user
+  = link_to 'Follow', user_follows_path(@user), data: {turbo_method: :post}, class: 'bg-blue-200 p-4' unless @fol.present?
+  = link_to 'Unfollow', follow_path(@user), data: {turbo_method: :delete}, class: 'bg-blue-200 p-4' if @fol.present?
 br
 br
 - @posts.each do |post|

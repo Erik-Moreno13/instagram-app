@@ -10,6 +10,8 @@ br
 
 a [href="#" data-reflex="click->post#like"
   data-post_id="#{post.id}"
-  data-user_id="#{current_user.id}"] like(#{post.likes.count})
+  data-user_id="#{current_user.id}"]
+    i class="text-blue-600 fa-solid fa-heart"
+p #{post.likes.count}
 br
 br

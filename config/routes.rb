@@ -1,10 +1,10 @@
 Rails.application.routes.draw do
   resources :users do
     resources :posts
+    resources :follows, only: [:create]
   end
-  namespace :user do
-    resources :posts
-  end
+
+  resources :follows, only: [:destroy]
 
   devise_for :users, path: '', path_names: {
     sign_in: 'login',
