@@ -15,11 +15,8 @@ br
   = link_to 'Unfollow', follow_path(@user), data: {turbo_method: :delete}, class: 'bg-blue-200 p-4' if @fol.present?
 br
 br
-- @posts.each do |post|
-  = image_tag post.image if post.image.attached?
-  = post.description
-  br
-  br
-  hr
+== render partial: 'post', collection: @posts
+br
+hr
 - if @user == current_user
   = link_to 'new Post', new_user_post_path

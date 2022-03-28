@@ -34,7 +34,8 @@ export default class extends Controller {
    *   reflexId - a UUID4 or developer-provided unique identifier for each Reflex
    */
 
-  beforeReflex (element, reflex, noop, reflexId) {
+  beforeReflex (event) {
+    console.log(event.target)
     // document.body.classList.add('wait')
   }
 
